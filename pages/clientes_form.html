@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/images/Logo.png" type="image/x-icon">
+    <title>Formulario de Cliente</title>
+    <meta name="description" content="Formulario para nuevos clientes interesados en nuestros servicios. Completa el formulario y nos pondremos en contacto contigo." />
+    <meta name="keywords" content="formulario, cliente, contacto, servicios, logística" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <a href="../index.html">
+          <img src="../assets/images/Logo-CLP002-FNDO-BCO.png" alt="Logo de la Empresa" class="imageHeader">
+        </a>
+      </div>
+      <div class="encabezado">
+        <div>
+          <input type="text" placeholder="Buscar Envios" aria-label="Buscar Envios">
+        </div>
+        <div>
+          <a class="btn-rojo" href="./login.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="nvoCliente" class="container">
+        <div class="nvoCliente">
+          <div class="formulario">
+            <h1 class="titulos">¡Quiero ser cliente!</h1>
+            <p>Completá el formulario de abajo y un ejecutivo de cuentas se comunicará con vos.</p>
+            <form>
+              <label for="nombre">Nombre y Apellido</label>
+              <input type="text" id="nombre" placeholder="Nombre y Apellido" name="nombre" />
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Email" name="email" />
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" placeholder="Teléfono" name="telefono" />
+              <label for="envios">Cantidad de Envios Mensuales</label>
+              <input type="text" id="envios" placeholder="Cantidad de Envios" name="envios" />
+              <label for="empresa">Nombre de la Empresa</label>
+              <input type="text" id="empresa" placeholder="Nombre de la Empresa" name="empresa" />
+              <button type="submit" class="btn-rojo">Enviar</button>
+            </form>
+          </div>
+          <div class="mapa">
+            <h2 class="titulos">Dónde Estamos</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9289.451573239048!2d-58.62576220523309!3d-34.59614221969048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9183fe0e865%3A0xd56e9ae7417a72a6!2sGood%20Park%20Sa!5e0!3m2!1ses!2sar!4v1722729846444!5m2!1ses!2sar"
+              width="100%"
+              height="90%"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              aria-label="Ubicación en Google Maps"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <img src="../assets/images/Logo-CLP002-FNDO-BCO.png" alt="Logo de la Empresa">
+      <p>&copy; 2024 Powered By <span>Gonzalo Veglio.</span> Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
