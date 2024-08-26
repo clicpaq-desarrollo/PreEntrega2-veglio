@@ -17,15 +17,90 @@ body {
 
 /******************************/
 /*******COMUNES***************/
-/****************************/
+/****************************/ 
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #3b82f6;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
+
+.cliente_logo{
+    width: calc(100% - 40px);
+    height: 75px
+}
+.box-part i{
+    font-size: 3em;
+}
+.text-justify {
+    text-align: justify;
+}
+.menuPrincipal li:hover {
+    border-bottom: 1px solid #ffffff;
+} 
+
 html {
+    font-size: 16px;
     scroll-behavior: smooth;
 }
-
-.container {
-    padding: 0 15px;
+ 
+.carousel-item--heigth {
+    height: 75vh;
 }
-
 .header {
     background-color: #a61829;
     padding: 15px;
@@ -58,13 +133,7 @@ html {
 img.imageHeader {
     width: 170px;
 }
-
-input,
-textarea {
-    margin: 10px 0;
-    width: 100%;
-    padding: 10px;
-}
+ 
 
 .titulos {
     text-align: center;
@@ -94,6 +163,8 @@ textarea {
 /******************************/
 /**********PRINCIPAL**********/
 /******************************/
+
+.home-testimonial{background-color: #231834;height: 380px}.home-testimonial-bottom{background-color: #f8f8f8;transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;margin-top: 20px;margin-bottom: 0px;position: relative;height: 130px;top: 190px}.home-testimonial h3{color: var(--orange);font-size: 14px;font-weight: 500;text-transform: uppercase}.home-testimonial h2{color: white;font-size: 28px;font-weight: 700}.testimonial-inner{position: relative;top: -174px}.testimonial-pos{position: relative;top: 24px}.testimonial-inner .tour-desc{border-radius: 5px;padding: 40px}.color-grey-3{font-family: "Montserrat", Sans-serif;font-size: 14px;color: #6c83a2}.testimonial-inner img.tm-people{width: 60px;height: 60px;-webkit-border-radius: 50%;border-radius: 50%;-o-object-fit: cover;object-fit: cover;max-width: none}.link-name{font-family: "Montserrat", Sans-serif;font-size: 14px;color: #6c83a2}.link-position{font-family: "Montserrat", Sans-serif;font-size: 12px;color: #6c83a2}
 
 .slider {
     background: url("../assets/images/slider1.jpg");
@@ -252,58 +323,21 @@ textarea {
     margin: 20px 0;
 }
 
+.h-100-vh {
+    height: 100vh;
+}
 /******************************/
 /************LOGIN*************/
 /******************************/
-.login {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.login__background {
     background: url('../assets/images/slider2.jpg') no-repeat center center;
     background-size: cover;
-    height: 100vh;
-}
-
-.login__container {
-    background: #fff;
-    padding: 20px 15px;
-    text-align: center; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 100%;
-}
-
-.login img {
-    width: 200px;
-}
-
-.login__form {
-    margin-top: 20px;
-}
-
-.login__form div {
-    margin-bottom: 15px;
-}
-
-.login__form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.login__form input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.login__form .btn-rojo {
-    display: inline-block;
-    padding: 10px 20px; 
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
-}
+  }
+     
+  .bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.5) !important;
+    backdrop-filter: saturate(200%) blur(5px);
+  }
  
 /******************************/
 /**********CLIENTE*************/

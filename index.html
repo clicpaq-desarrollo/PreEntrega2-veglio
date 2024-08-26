@@ -1,100 +1,388 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/images/Logo.png" type="image/x-icon">
-    <title>Clicpaq</title>
-    <meta name="description" content="Descripción del sitio web">
-    <meta name="keywords" content="envíos, clientes, seguimiento, exportación de datos">
-  </head>
-  <body>
-    <header class="header">
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+
+
+</head>
+
+<body>
+  <nav class="py-2 bg-danger border-bottom navbar-expand-lg">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto text-white menuPrincipal">
+        <li class="nav-item">
+          <a href="#" class="nav-link link-light px-2">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link link-light px-2">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link link-light px-2">Envios</a>
+        </li>
+      </ul>
+      <ul class="nav text-white">
+        <li class="nav-item">
+          <a href="./pages/login.html" class="btn nav-link link-light px-2 px-3 btn btn-warning p-2">Ingresar <i class="fa-solid fa-user"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+    <div class="container-fluid" bis_skin_checked="1">
+      <a class="navbar-brand" href="#">Expand at md</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04" bis_skin_checked="1">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Envios</a>
+          </li> 
+          <li class="nav-item">
+            <a href="./pages/login.html" class="btn nav-link link-light px-2 px-3 btn btn-warning p-2">Ingresar <i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+        <form>
+          <input class="form-control" type="text" placeholder="Numero de envio" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- <header class="py-3 border-bottom sticky-top bg-white">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center h-100" bis_skin_checked="1">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 text-light text-decoration-none">
+        <img src="./assets/images/logo_nombre.png" alt="" class="w-50" />
+      </a>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 row justify-content-center align-items-center" role="search">
+        <div class="col-auto" bis_skin_checked="1">
+          <label for="inputPassword2" class="visually-hidden">Password</label>
+          <input type="text" class="form-control" id="inputPassword2" placeholder="Número de envio" />
+        </div>
+        <div class="col-auto" bis_skin_checked="1">
+          <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+      </form>
+    </div>
+  </header> -->
+
+  <div id="sliderPrincipal" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#sliderPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#sliderPrincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item carousel-item--heigth active">
+        <img src="./assets/images/slider1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Distribuí mejor. Más rápido. Informado</h5>
+          <p>Conocé la plataforma digital que le brinda el control al cliente en todo momento..</p>
+        </div>
+      </div>
+      <div class="carousel-item carousel-item--heigth">
+        <img src="./assets/images/slider2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#sliderPrincipal" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#sliderPrincipal" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <section id="carouselClientes" class="carousel slide " data-bs-ride="carousel" data-bs-interval="4000" data-bs-touch="true">
+    <div class="carousel-inner py-5">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="p-2 cliente_logo">
+            <img class="w-100 h-100" src="assets/images/clientes/arbell.svg" alt="Logo de Arbell" />
+          </div>
+          <div class="p-2 cliente_logo">
+            <img class="w-100 h-100" src="assets/images/clientes/belmo.svg" alt="Logo de Belmo" />
+          </div>
+          <div class="p-2 cliente_logo">
+            <img class="w-100 h-100" src="assets/images/clientes/bedtime.svg" alt="Logo de Burger King" />
+          </div>
+          <div class="p-2 cliente_logo">
+            <img class="w-100 h-100" src="assets/images/clientes/fravega.svg" alt="Logo de Sealy" />
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="p-2 cliente_logo">
+            <img class="w-100 h-100" src="assets/images/clientes/john-deere.svg" alt="Logo de Fravega" />
+          </div>
+          <div class="p-2 cliente_logo">
+            <img class="w-100 h-100" src="assets/images/clientes/Palmero.svg" alt="Logo de Arbell" />
+          </div>
+          <div class="p-2 cliente_logo">
+            <img class="w-100 h-100" src="assets/images/clientes/sealy.svg" alt="Logo de Belmo" />
+          </div>
+          <div class="p-2 cliente_logo">
+            <img class="w-100 h-100" src="assets/images/clientes/simmons.svg" alt="Logo de Burger King" />
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="p-2 cliente_logo">
+            <img class="w-100 h-100" src="assets/images/clientes/ledesma.svg" alt="Logo de Fravega" />
+          </div>
+          <div class="p-2 cliente_logo">
+            <img class="w-100 h-100" src="assets/images/clientes/tromen.svg" alt="Logo de Arbell" />
+          </div>
+          <div class="p-2 cliente_logo">
+            <img class="w-100 h-100" src="assets/images/clientes/Skf.svg" alt="Logo de Belmo" />
+          </div>
+          <div class="p-2 cliente_logo">
+            <img class="w-100 h-100" src="assets/images/clientes/Sommiercenter.svg" alt="Logo de Burger King" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselClientes" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselClientes" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+
+
+
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./assets/images/section001.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">
+          Buscá tus envíos como siempre deberías haberlo hecho.
+        </h1>
+        <p class="lead">
+          Nombre de destinatario, número de envío, localidad de destino o
+          número de remito. Ningún dato es un problema para nosotros.(La
+          velocidad de respuesta es real)
+        </p>
+      </div>
+    </div>
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">
+          Exportá tus datos a Excel. Sólo indicanos las fechas.
+        </h1>
+        <p class="lead">
+          Todos los datos del envío se encuentran a disposición. Columnas
+          dinámicas, filtrado avanzado y más.
+        </p>
+      </div>
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./assets/images/section0012.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
+      </div>
+    </div>
+  </div> 
+  <section>
+    <div class="container py-5">
+      <div class="row text-center justify-content-center mb-5">
+        <div class="col-xl-6 col-lg-8">
+          <h2 class="font-weight-bold">Nuestra empresa, nuestra historia</h2>
+          <p class="text-muted">Un pequeño resumen de nuestra historia.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2003</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Favland Founded</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2004</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Launched Trello</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2005</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Launched Messanger</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2010</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Open New Branch</p>
+              </div>
+            </div>
+            <div class="timeline-step mb-0">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2020</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">In Fortune 500</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <img class="d-block mx-auto mb-4 h-50 w-100" src="./assets/images/logo_nombre.png" alt="">
+    </div>
+   </section>
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Diagramación -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="box-part text-center">
+            <i class="fa-solid fa-route"></i>
+
+            <div class="title">
+              <h4>Diagramación</h4>
+            </div>
+
+            <div class="text text-justify">
+              <span>
+                La diagramación es esencial para planificar rutas eficientes,
+                optimizando tiempos y recursos. Un buen diseño de ruta asegura
+                que los envíos lleguen a tiempo, reduciendo costos operativos
+                y mejorando la satisfacción del cliente. La estrategia
+                adecuada de diagramación es clave para cualquier operación
+                logística efectiva.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paquetería -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="box-part text-center">
+            <i class="fa-solid fa-box"></i>
+
+            <div class="title">
+              <h4>Paquetería</h4>
+            </div>
+
+            <div class="text text-justify">
+              <span>
+                El servicio de paquetería implica la recolección, transporte y
+                entrega de paquetes de forma segura y rápida. La eficiencia en
+                la manipulación de paquetería es fundamental para mantener la
+                integridad de los productos, asegurando que lleguen en
+                perfectas condiciones al destinatario final.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logística -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="box-part text-center">
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <div class="title">
+              <h4>Logística</h4>
+            </div>
+
+            <div class="text text-justify">
+              <span>
+                La logística abarca la gestión integral de la cadena de
+                suministro, desde el almacenamiento hasta la distribución. Es
+                un proceso crítico que coordina el flujo de bienes y
+                servicios, asegurando que los productos lleguen al mercado de
+                manera oportuna y eficiente, maximizando así la satisfacción
+                del cliente.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="clientesForms">
+    <h2>¡Quiero ser cliente!</h2>
+    <p>
+      ¿Estas buscando una logística que pueda ofrecer algo diferente? ¿Querés
+      conocer más sobre nuestros servicios?
+    </p>
+    <a href="./pages/clientes_form.html" class="btn-rojo">Contáctanos</a>
+  </section>
+  <div class="separador"></div>
+
+  <section class="contacto">
+    <h2 class="titulos">¿Tienes problemas con alguno de los envíos?</h2>
+    <div class="contactoForm">
       <div>
-        <a href="#">
-          <img src="assets/images/Logo-CLP002-FNDO-BCO.png" alt="Logo de la Empresa" class="imageHeader">
-        </a>
-      </div>
-      <div class="encabezado">
-        <div>
-          <input type="text" placeholder="Buscar Envios">
-        </div>
-        <div>
-          <a class="btn-rojo" href="./pages/login.html">Login</a>
-        </div>
-      </div>
-    </header>
-
-    <section class="slider">
-      <div class="content">
-        <div>
-          <h1 class="titulos">Distribuí mejor. Más rápido. Informado.</h1>
-          <p>Conocé la plataforma digital que le brinda el control al cliente en todo momento.</p>
-        </div>
-        <div>
-          <a class="btn-rojo" href="./pages/buscar_envios.html">Buscar envíos</a>
-        </div>
-      </div>
-    </section>
-
-    <main>
-      <section class="clientes"> 
-        <div><img src="assets/images/clientes/arbell.svg" alt="Logo de Arbell"></div>
-        <div><img src="assets/images/clientes/belmo.svg" alt="Logo de Belmo"></div>
-        <div><img src="assets/images/clientes/burger-king.svg" alt="Logo de Burger King"></div>
-        <div><img src="assets/images/clientes/sealy.svg" alt="Logo de Sealy"></div>
-        <div><img src="assets/images/clientes/fravega.svg" alt="Logo de Fravega"></div>
-      </section>
-
-      <section class="nosotros">
-        <article>
-          <img class="shadow-sm" src="assets/images/section001.png" alt="Imagen descriptiva sección 1">
-          <h2>Buscá tus envíos como siempre deberías haberlo hecho.</h2>
-          <p>Nombre de destinatario, número de envío, localidad de destino o número de remito.<br />Ningún dato es un problema para nosotros.<br />(La velocidad de respuesta es real)</p>
-        </article>
-        <article>
-          <h2>Exportá tus datos a Excel. Sólo indicanos las fechas.</h2>
-          <p>Todos los datos del envío se encuentran a disposición. Columnas dinámicas, filtrado avanzado y más.</p>
-          <img class="shadow-sm" src="assets/images/section0012.png" alt="Imagen descriptiva sección 2">
-        </article>
-      </section>
-
-      <section class="clientesForms">
-        <h2>¡Quiero ser cliente!</h2>
-        <p>¿Estas buscando una logística que pueda ofrecer algo diferente? ¿Querés conocer más sobre nuestros servicios?</p>
-        <a href="./pages/clientes_form.html" class="btn-rojo">Contáctanos</a>
-      </section>
-      <hr class="separador">
-
-      <section class="contacto">
-        <h2 class="titulos">¿Tienes problemas con alguno de los envíos?</h2>
-        <div class="contactoForm">
-          <div>
-            <form>
-              <label for="nombre">Nombre y Apellido</label>
-              <input type="text" placeholder="Nombre y Apellido" name="nombre" />
-              <label for="guia">Numero de Guia</label>
-              <input type="text" placeholder="Numero de Guia" name="guia" />
-              <input class="btn-rojo" type="submit" value="Enviar" />
-            </form>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            </div>
+            <div id="emailHelp" class="form-text"></div>
           </div>
-          <div>
-            <img src="assets/images/logistic.jpg" alt="Imagen logística">
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Numero de envio</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" />
           </div>
-        </div>
-      </section>
-      <div class="to-top">
-        <a href="#"><img src="assets/images/hasta-chevron.png" alt="Flecha hacia arriba"></a>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
       </div>
-    </main>
+      <div class="d-sm-none d-none d-md-block d-lg-block">
+        <img src="assets/images/logistic.jpg" alt="Imagen logística" />
+      </div>
+    </div>
+  </section>
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Envios</a>
+      </li>
+    </ul>
+    <p class="text-center text-muted">© 2022 Company, Inc</p>
+  </footer>
+  <div class="to-top"><a href="#"><i class="fa-solid fa-chevron-up link-light"></i></a></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/db93820de6.js" crossorigin="anonymous"></script>
+</body>
 
-    <footer class="footer container">
-      <img src="assets/images/Logo-CLP002-FNDO-BCO.png" alt="Logo de la Empresa">
-      <p>&copy; 2024 Powered By <span>Gonzalo Veglio.</span> Todos los derechos reservados.</p>
-    </footer>
-  </body>
 </html>
