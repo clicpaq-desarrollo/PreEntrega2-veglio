@@ -14,11 +14,17 @@
     <meta name="description" content="Descripción del sitio web">
     <meta name="keywords" content="envíos, clientes, seguimiento, exportación de datos">
  
+<style> 
+.nav-item:hover{
+    border-bottom: 1px solid #fff;
+}
+</style>
+
 </head>
 <body>
     <nav class="bg-clp navbar navbar-dark navbar-expand-lg sticky-top" aria-label="Eighth navbar example">
       <div class="container" >
-        <a class="navbar-brand fw-bold" href="#">Clicpaq <i class="fa-solid fa-truck-fast"></i></a>
+        <a class="navbar-brand fw-bold" href="../index.html">Clicpaq <i class="fa-solid fa-truck-fast"></i></a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,16 +44,23 @@
               <a class="nav-link " href="./buscar_envios.html">Busca tu envio</a>
             </li>
           </ul>
-          <a href="./login.html" class=" px-3 btn btn-outline-light">Ingresar <i class="fa-solid fa-user"></i></a>
+          <a href="./login.html" class="d-none px-3 btn btn-outline-light">Ingresar <i class="fa-solid fa-user"></i></a>
+          <ul class="navbar-nav  ">
+            <li class="cliente_nombre text-white fs-5">
+               Hola <span class="fw-bold">Cliente </span>!
+            </li> 
+          </ul>
   
         </div>
       </div>
     </nav>
 
     <section class="table-container">
-        <h1 class="titulos">Mis Envios</h1>
-        <table class="table table-striped"> 
-            <thead>
+        <main class="container">
+
+            <h4 class="text-center subTitulos">Mis Envios</h4>
+            <table class="table table-hover shadow-sm p-3 mb-5 bg-body-tertiary rounded"> 
+                <thead>
                 <tr>
                     <th>Guia</th>
                     <th>Fecha</th>
@@ -199,6 +212,7 @@
                 </tr>
             </tbody>
         </table>
+    </main>
     </section>
 
     <footer class="py-3 mt-4 bg-clp">

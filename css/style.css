@@ -1,9 +1,15 @@
 * {
-    margin: 0px;
-    padding: 0px;
-  }
-.bg-clp{
-background-color: #8f1e2e; }
-.text-justify{
-      text-align: justify;
-  }
+  margin: 0px;
+  padding: 0px;
+}
+
+.bg-clp {
+  background-color: #8f1e2e;
+}
+
+.text-justify {
+  text-align: justify;
+}
+.nav-item:hover{
+  border-bottom: 1px solid #fff;
+}

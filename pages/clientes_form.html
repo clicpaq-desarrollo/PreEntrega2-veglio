@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
 <body>
     <nav class="bg-clp navbar navbar-dark navbar-expand-lg sticky-top" aria-label="Eighth navbar example">
       <div class="container" >
-        <a class="navbar-brand fw-bold" href="#">Clicpaq <i class="fa-solid fa-truck-fast"></i></a>
+        <a class="navbar-brand fw-bold" href="../index.html">Clicpaq <i class="fa-solid fa-truck-fast"></i></a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,27 +44,36 @@
       </div>
     </nav>
     <main>
-      <section id="nvoCliente" class="container">
-        <div class="nvoCliente">
-          <div class="formulario">
-            <h1 class="titulos">¡Quiero ser cliente!</h1>
-            <p>Completá el formulario de abajo y un ejecutivo de cuentas se comunicará con vos.</p>
-            <form>
-              <label for="nombre">Nombre y Apellido</label>
-              <input type="text" id="nombre" placeholder="Nombre y Apellido" name="nombre" />
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="Email" name="email" />
-              <label for="telefono">Teléfono</label>
-              <input type="tel" id="telefono" placeholder="Teléfono" name="telefono" />
-              <label for="envios">Cantidad de Envios Mensuales</label>
-              <input type="text" id="envios" placeholder="Cantidad de Envios" name="envios" />
-              <label for="empresa">Nombre de la Empresa</label>
-              <input type="text" id="empresa" placeholder="Nombre de la Empresa" name="empresa" />
-              <button type="submit" class="btn-rojo">Enviar</button>
-            </form>
+      <section >
+        <div class="container ">
+          <div class="d-flex justify-content-center align-items-center flex-column">
+            <h4 class="subTitulos my-3">¡Quiero ser cliente!</h4>
+
+            <div class="formulario">
+              <p class="text-center">Completá el formulario de abajo y un ejecutivo de cuentas se comunicará con vos.</p>
+              <form class="row g-3">
+                <div class="col-12 col-md-4">
+                  <input type="email" class="form-control form-control-lg"  placeholder="Email">
+                </div>
+                <div class="col-12 col-md-4">
+                  <input type="text" class="form-control form-control-lg"  placeholder="Nombre y Apellido">
+                </div>
+                <div class="col-12 col-md-4">
+                  <input type="text" class="form-control form-control-lg"  placeholder="Teléfono">
+                </div>
+                <div class="col-12 col-md-6">
+                  <input type="text" class="form-control form-control-lg"  placeholder="Cantidad de envios mensuales">
+                </div> 
+                <div class="col-12 col-md-6">
+                  <input type="text" class="form-control form-control-lg"  placeholder="Nombre de la empresa">
+                </div> 
+                <div class=" d-grid gap-2 col-4 mx-auto">
+                  <button type="submit" class="btn btn-primary ">Enviar</button>
+                </div>
+              </form>
           </div>
-          <div class="mapa">
-            <h2 class="titulos">Dónde Estamos</h2>
+          <h4 class="subTitulos my-3">Dónde Estamos</h4>
+          <div class="w-100">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9289.451573239048!2d-58.62576220523309!3d-34.59614221969048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9183fe0e865%3A0xd56e9ae7417a72a6!2sGood%20Park%20Sa!5e0!3m2!1ses!2sar!4v1722729846444!5m2!1ses!2sar"
               width="100%"
@@ -77,6 +86,7 @@
             ></iframe>
           </div>
         </div>
+      </div>
       </section>
     </main>
 
@@ -86,5 +96,8 @@
     <p class="text-center text-white">© 2024 | Powered by <strong>Gonzalo Veglio.</strong> Todos los Derechos Reservados</p>
  </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/db93820de6.js" crossorigin="anonymous"></script>
+
   </body>
 </html>
