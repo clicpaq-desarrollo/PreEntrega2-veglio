@@ -13,3 +13,17 @@
 .nav-item:hover{
   border-bottom: 1px solid #fff;
 }
+
+h4.subTitulos { 
+  font-size: 2em; 
+}
+
+.carousel-caption {
+  top: 30%;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.carousel-item>img{
+  filter: blur(1px) brightness(0.8);
+} 
