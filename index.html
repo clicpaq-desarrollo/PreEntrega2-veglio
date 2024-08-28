@@ -5,12 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/images/Logo.png" type="image/x-icon">
+  <meta name="description" content="Clicpaq Argentina ofrece servicios rápidos y seguros de envíos nacionales, seguimiento de paquetes en tiempo real, y soluciones de logística para clientes particulares y empresas.">
+  <meta name="keywords" content="Clicpaq, envíos nacionales, seguimiento de envíos, logística, entrega de paquetes, envíos seguros, transporte de mercadería, envíos puerta a puerta, Argentina">
+
+  <title>Clicpaqs</title>
 
   <style>
-
-
     .layout {
       width: 100%;
       display: flex;
@@ -34,258 +39,222 @@
       font-size: 2em;
       margin-bottom: 10px;
     }
-    .servicios i{
-        font-size: 3em;
-        text-align: center;
-    }
-    .servicios h3{
-        text-align: center;
+
+    .servicios i {
+      font-size: 3em;
+      text-align: center;
     }
 
-    
+    .servicios h3 {
+      text-align: center;
+    }
   </style>
 </head>
 
 <body>
-  <nav class="bg-clp navbar navbar-dark navbar-expand-lg sticky-top" aria-label="Eighth navbar example">
-    <div class="container" >
-      <a class="navbar-brand fw-bold" href="#">Clicpaq <i class="fa-solid fa-truck-fast"></i></a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <header>
+    <nav class="bg-clp navbar navbar-dark navbar-expand-lg sticky-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Clicpaq <i class="fa-solid fa-truck-fast"></i></a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="navbar-collapse collapse" id="navbarsExample07" >
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#nosotros">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#contacto">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="./pages/buscar_envios.html">Busca tu envio</a>
-          </li>
-        </ul>
-        <a href="./pages/login.html" class=" px-3 btn btn-outline-light">Ingresar <i class="fa-solid fa-user"></i></a>
-
-      </div>
-    </div>
-  </nav>
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/images/slider1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+        <div class="navbar-collapse collapse" id="navbarsExample07">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/buscar_envios.html">Busca tu envío</a>
+            </li>
+          </ul>
+          <a href="./pages/login.html" class="px-3 btn btn-outline-light">Ingresar <i class="fa-solid fa-user"></i></a>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="./assets/images/slider2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+    </nav>
+  </header>
+  <main>
+    <section id="carousel" aria-label="Carrusel de imágenes destacadas">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/images/slider3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <section id="nosotros">
-    <div class="container d-flex py-5 flex-wrap justify-content-center">
-       <div class="row">
-        <div class="col-md-6 col-12"> <img src="./assets/images/section001.png" class="d-block mx-lg-auto img-fluid">
-        </div>
-        <div class="col-md-6 col-12">
-          <h1 class="display-5 fw-bold lh-1 mb-3">
-            Buscá tus envíos como siempre deberías haberlo hecho.
-          </h1>
-          <p class="lead">
-            Nombre de destinatario, número de envío, localidad de destino o
-            número de remito. Ningún dato es un problema para nosotros.(La
-            velocidad de respuesta es real)
-          </p>
-        </div>
-        <div class="col-md-6 col-12">
-          <h1 class="display-5 fw-bold lh-1 mb-3">
-            Buscá tus envíos como siempre deberías haberlo hecho.
-          </h1>
-          <p class="lead">
-            Nombre de destinatario, número de envío, localidad de destino o
-            número de remito. Ningún dato es un problema para nosotros.(La
-            velocidad de respuesta es real)
-          </p>
-        </div>
-        <div class="col-md-6 col-12">
-          <img src="./assets/images/section001.png" class="d-block mx-lg-auto img-fluid">
-        </div>
-      </div>
-  </section>
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <!-- Diagramación -->
-        <div class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="servicios">
-            <i class="fa-solid fa-route"></i>
-
-            <div class="title">
-              <h3>Diagramación</h3>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/slider1.jpg" class="d-block w-100" alt="Primera imagen del carrusel">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Primera diapositiva</h5>
+              <p>Contenido representativo de la primera diapositiva.</p>
             </div>
-
-            <div class="text text-justify">
-              <span>
-                La diagramación es esencial para planificar rutas eficientes,
-                optimizando tiempos y recursos. Un buen diseño de ruta asegura
-                que los envíos lleguen a tiempo, reduciendo costos operativos
-                y mejorando la satisfacción del cliente. La estrategia
-                adecuada de diagramación es clave para cualquier operación
-                logística efectiva.
-              </span>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/slider2.jpg" class="d-block w-100" alt="Segunda imagen del carrusel">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Segunda diapositiva</h5>
+              <p>Contenido representativo de la segunda diapositiva.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/slider3.jpg" class="d-block w-100" alt="Tercera imagen del carrusel">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Tercera diapositiva</h5>
+              <p>Contenido representativo de la tercera diapositiva.</p>
             </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
 
-        <!-- Paquetería -->
-        <div class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="servicios">
-            <i class="fa-solid fa-box"></i>
-
-            <div class="title">
-              <h3>Paquetería</h3>
-            </div>
-
-            <div class="text text-justify">
-              <span>
-                El servicio de paquetería implica la recolección, transporte y
-                entrega de paquetes de forma segura y rápida. La eficiencia en
-                la manipulación de paquetería es fundamental para mantener la
-                integridad de los productos, asegurando que lleguen en
-                perfectas condiciones al destinatario final.
-              </span>
-            </div>
+    <section id="nosotros" aria-labelledby="nosotros-title">
+      <div class="container d-flex py-5 flex-wrap justify-content-center">
+        <h2 id="nosotros-title" class="visually-hidden">Sobre nosotros</h2>
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <img src="./assets/images/section001.png" class="d-block mx-lg-auto img-fluid" alt="Imagen descriptiva de envíos">
           </div>
-        </div>
-
-        <!-- Logística -->
-        <div class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="servicios">
-            <i class="fa-solid fa-truck-fast"></i>
-
-            <div class="title">
-              <h3>Logística</h3>
-            </div>
-
-            <div class="text text-justify">
-              <span>
-                La logística abarca la gestión integral de la cadena de
-                suministro, desde el almacenamiento hasta la distribución. Es
-                un proceso crítico que coordina el flujo de bienes y
-                servicios, asegurando que los productos lleguen al mercado de
-                manera oportuna y eficiente, maximizando así la satisfacción
-                del cliente.
-              </span>
-            </div>
+          <div class="col-md-6 col-12">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Buscá tus envíos como siempre deberías haberlo hecho.</h1>
+            <p class="lead">Nombre de destinatario, número de envío, localidad de destino o número de remito. Ningún dato es un problema para nosotros.(La velocidad de respuesta es real)</p>
+          </div>
+          <div class="col-md-6 col-12">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Buscá tus envíos como siempre deberías haberlo hecho.</h1>
+            <p class="lead">Nombre de destinatario, número de envío, localidad de destino o número de remito. Ningún dato es un problema para nosotros.(La velocidad de respuesta es real)</p>
+          </div>
+          <div class="col-md-6 col-12">
+            <img src="./assets/images/section001.png" class="d-block mx-lg-auto img-fluid" alt="Imagen descriptiva de envíos">
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="clientes">
-    <div class="container d-flex py-5 flex-wrap justify-content-center">
+    </section>
 
-      <h4 class="subTitulos mb-3">Nuestros clientes</h4>
-      <div class="layout ">
-        <div>
-          <img src="./assets/images/clientes/arbell.svg" alt="">
-        </div>
-        <div>
-          <img src="./assets/images/clientes/bedtime.svg" alt="">
-        </div>
-        <div>
-          <img src="./assets/images/clientes/Skf.svg" alt="">
-        </div>
-        <div>
-          <img src="./assets/images/clientes/belmo.svg" alt="">
-        </div>
-        <div>
-          <img src="./assets/images/clientes/Palmero.svg" alt="">
-        </div>
-        <div>
-          <img src="./assets/images/clientes/fravega.svg" alt="">
+    <section class="py-5" aria-labelledby="servicios-title">
+      <div class="container">
+        <h2 id="servicios-title" class="text-center">Nuestros Servicios</h2>
+        <div class="row">
+          <article class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="servicios">
+              <i class="fa-solid fa-route"></i>
+              <div class="title">
+                <h3>Diagramación</h3>
+              </div>
+              <div class="text text-justify">
+                <span>La diagramación es esencial para planificar rutas eficientes, optimizando tiempos y recursos. Un buen diseño de ruta asegura que los envíos lleguen a tiempo, reduciendo costos operativos y mejorando la satisfacción del cliente. La estrategia adecuada de diagramación es clave para cualquier operación logística efectiva.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="servicios">
+              <i class="fa-solid fa-box"></i>
+              <div class="title">
+                <h3>Paquetería</h3>
+              </div>
+              <div class="text text-justify">
+                <span>El servicio de paquetería implica la recolección, transporte y entrega de paquetes de forma segura y rápida. La eficiencia en la manipulación de paquetería es fundamental para mantener la integridad de los productos, asegurando que lleguen en perfectas condiciones al destinatario final.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="servicios">
+              <i class="fa-solid fa-truck-fast"></i>
+              <div class="title">
+                <h3>Logística</h3>
+              </div>
+              <div class="text text-justify">
+                <span>La logística abarca la gestión integral de la cadena de suministro, desde el almacenamiento hasta la distribución. Es un proceso crítico que coordina el flujo de bienes y servicios, asegurando que los productos lleguen al mercado de manera oportuna y eficiente, maximizando así la satisfacción del cliente.</span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
-      <div class="d-flex flex-column align-items-center mt-5">
+    </section>
+
+    <section class="clientes" aria-labelledby="clientes-title">
+      <div class="container d-flex py-5 flex-wrap justify-content-center">
+        <h2 id="clientes-title" class="subTitulos mb-3">Nuestros Clientes</h2>
+        <div class="layout">
+          <div>
+            <img src="./assets/images/clientes/arbell.svg" alt="Cliente Arbell">
+          </div>
+          <div>
+            <img src="./assets/images/clientes/bedtime.svg" alt="Cliente Bedtime">
+          </div>
+          <div>
+            <img src="./assets/images/clientes/Skf.svg" alt="Cliente SKF">
+          </div>
+          <div>
+            <img src="./assets/images/clientes/belmo.svg" alt="Cliente Belmo">
+          </div>
+          <div>
+            <img src="./assets/images/clientes/Palmero.svg" alt="Cliente Palmero">
+          </div>
+          <div>
+            <img src="./assets/images/clientes/fravega.svg" alt="Cliente Fravega">
+          </div>
+        </div>
+        <div class="d-flex flex-column align-items-center mt-5">
           <h4 class="subTitulos">¡Quiero ser cliente!</h4>
-          <p>
-              ¿Estas buscando una logística que pueda ofrecer algo diferente? ¿Querés
-              conocer más sobre nuestros servicios?
-          </p>
+          <p>¿Estás buscando una logística que pueda ofrecer algo diferente? ¿Querés conocer más sobre nuestros servicios?</p>
           <a href="./pages/clientes_form.html" class="btn btn-outline-danger">Contáctanos</a>
-      </div>
-    </div>
-</section>
-
-  <section class="contacto" id="contacto">
-    <div class="container d-flex flex-column align-items-center mt-5">
-
-      <h4 class="subTitulos">Contactanos</h4>
-      <div class="row">
-
-          <div class="col-12 col-md-6">
-              <form>
-                  <div class="mb-3">
-            <label for="consulta_nombre_apellido" class="form-label">Nombre y Apellido</label>
-            <input type="text" class="form-control" id="consulta_nombre_apellido"   />
-            <div class="mb-3">
-              <label for="consulta_email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="consulta_email"   />
-            </div>
-            <div id="emailHelp" class="form-text"></div>
-          </div>
-          <div class="mb-3">
-            <label for="consulta_telefono" class="form-label">Teléfono</label>
-            <input type="text" class="form-control" id="consulta_telefono" />
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="d-sm-none d-none d-md-block d-lg-block">
-          <img class="img-fluid" src="assets/images/logistic_sm.jpg" alt="Imagen logística" />
         </div>
-    </div>
-</div>
-  </section>
- 
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto" aria-labelledby="contacto-title">
+      <div class="container d-flex flex-column align-items-center mt-5">
+        <h2 id="contacto-title" class="subTitulos">Contáctanos</h2>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="consulta_nombre_apellido" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="consulta_nombre_apellido" />
+              </div>
+              <div class="mb-3">
+                <label for="consulta_email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="consulta_email" />
+              </div>
+              <div class="mb-3">
+                <label for="consulta_telefono" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="consulta_telefono" />
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-none d-md-block">
+              <img class="img-fluid" src="assets/images/logistic_sm.jpg" alt="Imagen de logística">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="py-3 mt-4 bg-clp">
-    <div class="container d-flex flex-column align-items-center mt-5" >
-  <img class="w-25" src="./assets/images/logo-tte-blanco.png" alt="Logo de la empresa">
-  <p class="text-center text-white">© 2024 | Powered by <strong>Gonzalo Veglio.</strong> Todos los Derechos Reservados</p>
-</div>
-</footer>
+    <div class="container d-flex flex-column align-items-center mt-5">
+      <img class="w-25" src="./assets/images/logo-tte-blanco.png" alt="Logo de la empresa">
+      <p class="text-center text-white">© 2024 | Powered by <strong>Gonzalo Veglio.</strong> Todos los Derechos Reservados</p>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/db93820de6.js" crossorigin="anonymous"></script>
