@@ -1,4 +1,6 @@
-/* +++++++++++GENERAL++++++++++ */
+/******************************/
+/************GENERAL***********/
+/******************************/
 
 * {
   margin: 0px;
@@ -23,7 +25,9 @@ h4.subTitulos {
 }
 
 
-/* +++++++++++INDEX++++++++++ */
+/******************************/
+/************INDEX*************/
+/******************************/
 .carousel-caption {
   top: 30%;
   font-size: 1.5rem;
@@ -108,14 +112,12 @@ h4.subTitulos {
   backdrop-filter: saturate(200%) blur(5px);
 }
 
-/* Bloque de fondo de inicio de sesión */
-.login-background {
+ .login-background {
   background: url('../assets/images/slider2.jpg') no-repeat center center;
   background-size: cover;
 }
 
-/* Modificador de efecto vidrio */
-.login-background--glass-effect {
+ .login-background--glass-effect {
   background-color: hsla(0, 0%, 100%, 0.5) !important;
   backdrop-filter: saturate(200%) blur(5px);
 }
