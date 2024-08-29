@@ -1,3 +1,5 @@
+/* +++++++++++GENERAL++++++++++ */ 
+
 * {
   margin: 0px;
   padding: 0px;
@@ -10,6 +12,8 @@
 .text-justify {
   text-align: justify;
 }
+
+/* NAVBAR */
 .nav-item:hover{
   border-bottom: 1px solid #fff;
 }
@@ -18,6 +22,8 @@ h4.subTitulos {
   font-size: 2em; 
 }
 
+
+/* +++++++++++INDEX++++++++++ */ 
 .carousel-caption {
   top: 30%;
   font-size: 1.5rem;
@@ -27,3 +33,78 @@ h4.subTitulos {
 .carousel-item>img{
   filter: blur(1px) brightness(0.8);
 } 
+.layout {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.layout__img {
+  height: 30px;
+}
+
+.clientes {
+  background: url('../assets/images/patron.jpg');
+}
+
+.servicios__icono {
+  font-size: 3em;
+  text-align: center;
+}
+
+.servicios__titulo {
+  text-align: center;
+}
+
+.separador{
+  background: url('../assets/images/44222.jpg');
+  background-size: cover;
+  background-position: center center; 
+  width: 100%;
+  background-attachment: fixed;;
+  height: 250px;
+  margin: 40px 0;
+}
+@media screen and (max-width: 500px) {
+  .separador{
+    height: 100px;
+    margin: 10px 0;
+
+  }
+  .servicios {
+    margin: 15px 10px;
+}
+}
+
+
+
+ /******************************/
+    /*******BUSCAR ENVIOS**********/
+    /******************************/
+    #buscarenvios_body {
+      background: url('../assets/images/patron.jpg');
+    }
+    #buscarenvios_body>main>section {
+      height: 60vh;}
+
+
+    .formulario-envios  {
+      border: 3px solid #000;
+      background: #ffffffa1;
+      border-radius: 10px;
+      box-shadow: 4px 4px 3px #3131314f; 
+    }
+    @media screen and (max-width: 450px) {
+      .formulario-envios--compacto  {
+        border: 0;
+        background: transparent;
+        box-shadow: none
+      }
+      #buscarenvios_body>main>section {
+        height: 45vh;}
+      
+    }

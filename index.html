@@ -13,38 +13,7 @@
   <meta name="description" content="Clicpaq Argentina ofrece servicios rápidos y seguros de envíos nacionales, seguimiento de paquetes en tiempo real, y soluciones de logística para clientes particulares y empresas.">
   <meta name="keywords" content="Clicpaq, envíos nacionales, seguimiento de envíos, logística, entrega de paquetes, envíos seguros, transporte de mercadería, envíos puerta a puerta, Argentina">
 
-  <title>Clicpaq</title>
-
-  <style>
-    .layout {
-      width: 100%;
-      display: flex;
-      gap: 50px;
-      flex-wrap: wrap;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-    }
-
-    .layout img {
-      height: 30px;
-    }
-
-    .clientes {
-      background: url(./assets/images/patron.jpg);
-    }
-
-
-
-    .servicios i {
-      font-size: 3em;
-      text-align: center;
-    }
-
-    .servicios h3 {
-      text-align: center;
-    }
-  </style>
+  <title>Clicpaq</title> 
 </head>
 
 <body>
@@ -54,12 +23,11 @@
         <a class="navbar-brand fw-bold" href="#">
           <img src="./assets/images/logo_nombre_sm.png" height="30">
         </a>
-        <!-- <a class="navbar-brand fw-bold" href="#"><img src="./assets/images//logo_nombre_sm.png" height="30"></a> -->
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse collapse" id="navbarsExample07">
+        <div class="navbar-collapse collapse" id="navbarPrincipal">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="#">Inicio</a>
@@ -81,7 +49,7 @@
   </header>
   <main>
     <section id="carousel" aria-label="Carrusel de imágenes destacadas">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div id="sliderPrincipal" class="carousel slide" data-bs-ride="false">
 
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -107,11 +75,11 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#sliderPrincipal" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#sliderPrincipal" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Siguiente</span>
         </button>
@@ -139,16 +107,18 @@
         </div>
       </div>
     </section>
+<section class="separador">
 
+</section>
     <section class="py-5" aria-labelledby="servicios-title">
       <div class="container">
         <h2 class="text-center subTitulos mb-5">Nuestros Servicios</h2>
         <div class="row">
           <article class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="servicios">
-              <i class="fa-solid fa-route"></i>
+              <i class="servicios__icono fa-solid fa-route"></i>
               <div class="title">
-                <h3>Diagramación</h3>
+                <h3 class="servicios__titulo">Diagramación</h3>
               </div>
               <div class="text text-justify">
                 <span>La diagramación es esencial para planificar rutas eficientes, optimizando tiempos y recursos. Un buen diseño de ruta asegura que los envíos lleguen a tiempo, reduciendo costos operativos y mejorando la satisfacción del cliente. La estrategia adecuada de diagramación es clave para cualquier operación logística efectiva.</span>
@@ -158,9 +128,9 @@
 
           <article class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="servicios">
-              <i class="fa-solid fa-box"></i>
+              <i class="servicios__icono fa-solid fa-box"></i>
               <div class="title">
-                <h3>Paquetería</h3>
+                <h3 class="servicios__titulo">Paquetería</h3>
               </div>
               <div class="text text-justify">
                 <span>El servicio de paquetería implica la recolección, transporte y entrega de paquetes de forma segura y rápida. La eficiencia en la manipulación de paquetería es fundamental para mantener la integridad de los productos, asegurando que lleguen en perfectas condiciones al destinatario final.</span>
@@ -170,9 +140,9 @@
 
           <article class="text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="servicios">
-              <i class="fa-solid fa-truck-fast"></i>
+              <i class="servicios__icono fa-solid fa-truck-fast"></i>
               <div class="title">
-                <h3>Logística</h3>
+                <h3 class="servicios__titulo">Logística</h3>
               </div>
               <div class="text text-justify">
                 <span>La logística abarca la gestión integral de la cadena de suministro, desde el almacenamiento hasta la distribución. Es un proceso crítico que coordina el flujo de bienes y servicios, asegurando que los productos lleguen al mercado de manera oportuna y eficiente, maximizando así la satisfacción del cliente.</span>
@@ -188,22 +158,22 @@
         <h2 class="subTitulos mb-5 ">Nuestros Clientes</h2>
         <div class="layout">
           <div>
-            <img src="./assets/images/clientes/arbell.svg" alt="Cliente Arbell">
+            <img class="layout__img" src="./assets/images/clientes/arbell.svg" alt="Cliente Arbell">
           </div>
           <div>
-            <img src="./assets/images/clientes/bedtime.svg" alt="Cliente Bedtime">
+            <img class="layout__img" src="./assets/images/clientes/bedtime.svg" alt="Cliente Bedtime">
           </div>
           <div>
-            <img src="./assets/images/clientes/Skf.svg" alt="Cliente SKF">
+            <img class="layout__img" src="./assets/images/clientes/Skf.svg" alt="Cliente SKF">
           </div>
           <div>
-            <img src="./assets/images/clientes/belmo.svg" alt="Cliente Belmo">
+            <img class="layout__img" src="./assets/images/clientes/belmo.svg" alt="Cliente Belmo">
           </div>
           <div>
-            <img src="./assets/images/clientes/Palmero.svg" alt="Cliente Palmero">
+            <img class="layout__img" src="./assets/images/clientes/Palmero.svg" alt="Cliente Palmero">
           </div>
           <div>
-            <img src="./assets/images/clientes/fravega.svg" alt="Cliente Fravega">
+            <img class="layout__img" src="./assets/images/clientes/fravega.svg" alt="Cliente Fravega">
           </div>
         </div>
         <div class="d-flex flex-column align-items-center mt-5">

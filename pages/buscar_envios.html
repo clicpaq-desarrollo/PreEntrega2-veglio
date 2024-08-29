@@ -12,42 +12,19 @@
   <link rel="icon" href="../assets/images/Logo.png" type="image/x-icon">
   <meta name="description" content="Clicpaq Argentina ofrece servicios rápidos y seguros de envíos nacionales, seguimiento de paquetes en tiempo real, y soluciones de logística para clientes particulares y empresas.">
   <meta name="keywords" content="Clicpaq, envíos nacionales, seguimiento de envíos, logística, entrega de paquetes, envíos seguros, transporte de mercadería, envíos puerta a puerta, Argentina">
-  <title>Buscar envios</title>
-  <style>
-    /******************************/
-    /*******BUSCAR ENVIOS**********/
-    /******************************/
-    body {
-      background: url('../assets/images/patron.jpg');
-    }
-
-    .formularioEnvios {
-      border: 3px solid #000;
-      background: #ffffffa1;
-      border-radius: 10px;
-      box-shadow: 4px 4px 3px #3131314f; 
-    }
-    @media screen and (max-width: 450px) {
-      .formularioEnvios {
-        border: 0;
-        background: transparent;
-        box-shadow: none
-      }
-      
-    }
-  </style>
+  <title>Buscar envios</title> 
 </head>
 
-<body>
+<body id="buscarenvios_body">
   <header>
     <nav class="bg-clp navbar navbar-dark navbar-expand-lg sticky-top" aria-label="Eighth navbar example">
       <div class="container">
         <a class="navbar-brand fw-bold" href="../index.html"><img src="../assets/images/logo_nombre_sm.png" height="30"></a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse collapse" id="navbarsExample07">
+        <div class="navbar-collapse collapse" id="navbarPrincipal">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link " href="../index.html">Inicio</a>
@@ -70,7 +47,7 @@
 
   <main>
     <section>
-      <div class="container d-flex flex-column justify-content-center align-items-center py-5 my-5 formularioEnvios text-center">
+      <div class="container d-flex flex-column justify-content-center align-items-center py-5 my-5 formulario-envios formulario-envios--compacto  text-center">
         <div>
           <h1>¿Querés buscar un envío?</h1>
           <p>Ingresa tu número de envío en el formulario debajo</p>
