@@ -79,9 +79,13 @@ h4.subTitulos {
     margin: 15px 10px;
 } 
 .carousel-caption {
-  top: 0;
+  top: 10%;
   font-size: 0.6rem; 
   text-shadow: 1px 1px 1px #000;
+}
+
+.carousel-caption>h2 {
+  font-size: calc(.9rem + .9vw);
 }
 
 }
