@@ -1,4 +1,4 @@
-/* +++++++++++GENERAL++++++++++ */ 
+/* +++++++++++GENERAL++++++++++ */
 
 * {
   margin: 0px;
@@ -14,25 +14,26 @@
 }
 
 /* NAVBAR */
-.nav-item:hover{
+.nav-item:hover {
   border-bottom: 1px solid #fff;
 }
 
-h4.subTitulos { 
-  font-size: 2em; 
+h4.subTitulos {
+  font-size: 2em;
 }
 
 
-/* +++++++++++INDEX++++++++++ */ 
+/* +++++++++++INDEX++++++++++ */
 .carousel-caption {
   top: 30%;
   font-size: 1.5rem;
   text-shadow: 1px 1px 1px #000;
 }
 
-.carousel-item>img{
+.carousel-item>img {
   filter: blur(1px) brightness(0.8);
-} 
+}
+
 .layout {
   width: 100%;
   display: flex;
@@ -60,61 +61,102 @@ h4.subTitulos {
   text-align: center;
 }
 
-.separador{
+.separador {
   background: url('../assets/images/44222.jpg');
   background-size: cover;
-  background-position: center center; 
+  background-position: center center;
   width: 100%;
-  background-attachment: fixed;;
+  background-attachment: fixed;
+  ;
   height: 250px;
   margin: 40px 0;
 }
+
 @media screen and (max-width: 500px) {
-  .separador{
+  .separador {
     height: 100px;
     margin: 10px 0;
 
   }
+
   .servicios {
     margin: 15px 10px;
-} 
-.carousel-caption {
-  top: 10%;
-  font-size: 0.6rem; 
-  text-shadow: 1px 1px 1px #000;
+  }
+
+  .carousel-caption {
+    top: 10%;
+    font-size: 0.6rem;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  .carousel-caption>h2 {
+    font-size: calc(.9rem + .9vw);
+  }
+
 }
 
-.carousel-caption>h2 {
-  font-size: calc(.9rem + .9vw);
+/******************************/
+/************LOGIN*************/
+/******************************/
+.login-background {
+  background: url('../assets/images/slider2.jpg') no-repeat center center;
+  background-size: cover;
 }
 
+.glass-effect {
+  background-color: hsla(0, 0%, 100%, 0.5) !important;
+  backdrop-filter: saturate(200%) blur(5px);
+}
+
+/* Bloque de fondo de inicio de sesión */
+.login-background {
+  background: url('../assets/images/slider2.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+/* Modificador de efecto vidrio */
+.login-background--glass-effect {
+  background-color: hsla(0, 0%, 100%, 0.5) !important;
+  backdrop-filter: saturate(200%) blur(5px);
+}
+
+/******************************/
+/*******CLIENTES*************/
+/******************************/
+
+table {
+  border: 2px solid #dee2e6;
 }
 
 
+/******************************/
+/*******BUSCAR ENVIOS**********/
+/******************************/
+#buscarenvios_body {
+  background: url('../assets/images/patron.jpg');
+}
 
- /******************************/
-    /*******BUSCAR ENVIOS**********/
-    /******************************/
-    #buscarenvios_body {
-      background: url('../assets/images/patron.jpg');
-    }
-    #buscarenvios_body>main>section {
-      height: 60vh;}
+#buscarenvios_body>main>section {
+  height: 60vh;
+}
 
 
-    .formulario-envios  {
-      border: 3px solid #000;
-      background: #ffffffa1;
-      border-radius: 10px;
-      box-shadow: 4px 4px 3px #3131314f; 
-    }
-    @media screen and (max-width: 450px) {
-      .formulario-envios--compacto  {
-        border: 0;
-        background: transparent;
-        box-shadow: none
-      }
-      #buscarenvios_body>main>section {
-        height: 45vh;}
-      
-    }
+.formulario-envios {
+  border: 3px solid #000;
+  background: #ffffffa1;
+  border-radius: 10px;
+  box-shadow: 4px 4px 3px #3131314f;
+}
+
+@media screen and (max-width: 450px) {
+  .formulario-envios--compacto {
+    border: 0;
+    background: transparent;
+    box-shadow: none
+  }
+
+  #buscarenvios_body>main>section {
+    height: 45vh;
+  }
+
+}
