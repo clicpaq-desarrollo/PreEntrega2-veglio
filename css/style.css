@@ -75,6 +75,18 @@ h4.subTitulos {
   height: 250px;
   margin: 40px 0;
 }
+.to-top{ 
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  background-color: #8f1e2e;
+  border-radius: 5px;
+  padding: 15px;
+   
+}
+.to-top:hover{
+  background-color: #b5263a; 
+}
 
 @media screen and (max-width: 500px) {
   .separador {
